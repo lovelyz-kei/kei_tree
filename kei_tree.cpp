@@ -198,11 +198,8 @@ void printTree(Node* root, int maxDepth) {
 	//while statement until queue is empty
 	while(!(queueForBfs.empty())) {
 		//to get the level of nodes
-		//idx = 0 -> level = 0
-		//idx != 0 -> level = log2(idx+1)
-		int level;
-		if(idx == 0) level = 0;
-		else level = (int)(log10(idx+1) / log10(2));
+		//level = log2(idx+1)
+		int level = (int)(log10(idx+1) / log10(2));
 	
 		//get current node from the queue
 		Node* currNode = queueForBfs.front();
