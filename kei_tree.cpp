@@ -61,19 +61,19 @@ int main() {
 	}
 
 	//you can change the test case number
-	int testCaseNum = 3;
+	int testCaseNum = 1;
 
 	if(testCaseNum == 1) {
 		//test case 1
 		nodes[0]->setLeftChild(nodes[1]);
-    	nodes[0]->setRightChild(nodes[5]);
-        nodes[1]->setLeftChild(nodes[2]);
-        nodes[1]->setRightChild(nodes[3]);
-        nodes[5]->setRightChild(nodes[6]);
-        nodes[3]->setLeftChild(nodes[4]);
-        nodes[6]->setLeftChild(nodes[7]);
-        nodes[7]->setLeftChild(nodes[8]);
-        nodes[7]->setRightChild(nodes[9]);
+		nodes[0]->setRightChild(nodes[5]);
+		nodes[1]->setLeftChild(nodes[2]);       
+		nodes[1]->setRightChild(nodes[3]);
+		nodes[5]->setRightChild(nodes[6]);
+		nodes[3]->setLeftChild(nodes[4]);
+		nodes[6]->setLeftChild(nodes[7]);
+		nodes[7]->setLeftChild(nodes[8]);
+		nodes[7]->setRightChild(nodes[9]);
 	} else if(testCaseNum == 2) {
 		//test case 2
 		nodes[0]->setLeftChild(nodes[1]);
